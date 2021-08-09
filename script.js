@@ -8,7 +8,7 @@ const errSection = document.querySelector('.err-section');
 searchBtn.addEventListener("click",handleGif);
 
 function handleGif(){
-    //get value of input
+//get value of input
 let inputVal = input.value;
 
 fetch(`https://api.giphy.com/v1/gifs/translate?api_key=MOUoVphm6CuX7QhWDrq8ua0KJC1Irkx1&s=${inputVal}`,
