@@ -35,6 +35,7 @@ fetch(`https://api.giphy.com/v1/gifs/translate?api_key=MOUoVphm6CuX7QhWDrq8ua0KJ
         Error.textContent = `don\'t be lazy,search something out!!`
         errSection.appendChild(Error);
      } else {
+        img.src = '';
      Error.textContent = `${error}:(`;
      errSection.appendChild(Error);
      errSection.appendChild(sryImg);
