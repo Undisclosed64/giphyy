@@ -22,7 +22,6 @@ fetch(`https://api.giphy.com/v1/gifs/translate?api_key=MOUoVphm6CuX7QhWDrq8ua0KJ
      //console.log(response.data.images.original.url);
       //set img src to gif src
      img.src = response.data.images.original.url;
-
  })
  .catch(function(error){
      const Error = document.createElement("div");
