@@ -28,19 +28,19 @@ fetch(`https://api.giphy.com/v1/gifs/translate?api_key=MOUoVphm6CuX7QhWDrq8ua0KJ
      const Error = document.createElement("div");
      Error.className = 'error';
      const sryImg = document.createElement("img");
-     sryImg.src = 'sry.gif';
+     sryImg.src = "sry.gif";
      sryImg.className = 'sryImg';
      if(inputVal === ''){
+        errSection.innerHTML = '';
         img.src = '';
         Error.textContent = `don\'t be lazy,search something out!!`
         errSection.appendChild(Error);
      } else {
-        img.src = '';
+     img.src = '';
      Error.textContent = `${error}:(`;
      errSection.appendChild(Error);
      errSection.appendChild(sryImg);
      }
  })
  errSection.innerHTML = '';
-
 }
